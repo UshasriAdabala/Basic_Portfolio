@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			body, html {
+				height: 100%;
+				margin: 0;
+			}
+			p, h1, u {
+				color: white;
+			}
+			.bg {
+				/* The image used */
+				background-image: url("bg.jpeg");
+				/* Full height */
+				height: 100%;
+				/* Center and scale the image nicely */
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			* {
+				box-sizing: border-box;
+			}
+
+			/* Create two equal columns that float next to each other */
+			.column, .columna {
+				width: 45%; /* Reduce the width for padding */
+				margin: 20px;
+				padding: 20px; /* Add padding inside the columns */
+				border-radius: 10px;
+				color: white;
+			}
+
+			.column {
+				float: left;
+				background-color: #005f99; /* Blue background for left column */
+			}
+			
+			.columna {
+				float: right;
+				background-color: #003f7f; /* Darker blue background for right column */
+			}
+
+			/* Clear floats after the columns */
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			li {
+				text-align: center;
+				list-style-type: none; /* Remove bullet points */
+			}
+			
+			.hi {
+				background-color: #181818;
+				color: white;
+				padding: 10px;
+				border-radius: 5px;
+			}
+
+			.button {
+				font-size: 16px;
+				padding: 10px 20px;
+				background-color: white;
+				border: none;
+				color: #005f99;
+				cursor: pointer;
+				border-radius: 5px;
+				transition: background-color 0.3s;
+			}
+
+			.button:hover {
+				background-color: #003f7f;
+				color: white;
+			}
+
+			/* Add padding to the body */
+			body {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		</style>
+	</head>
+	<body class="bg">
+		<br><br>
+		<h1><u>My Price</u></h1>
+		<br><br><hr color="white"><br><br><br><br>
+		<div class="row">
+			<div class="column">
+				<ul>
+					<br>
+					<li class="hi"><font size="5">Basic</font></li><br><hr>
+					<li>Web Development</li><hr>
+					<li>Responsive Design</li><hr>
+					<li>No database integration</li><hr>
+					<li><pre>Rs. 1,00,00 
+per Project</pre></li><hr>
+					<li>Mail Support</li><hr>
+					<li><a href="login.html" target="project"><button class="button">Sign Up</button></a></li>
+				</ul>
+			</div>
+			<div class="columna">
+				<ul>
+					<br>
+					<li class="hi"><font size="5">Pro</font></li><br><hr>
+					<li>Web Development</li><hr>
+					<li>Responsive Design</li><hr>
+					<li>Database integration</li><hr>
+					<li><pre>Rs. 2,50,00
+per Project</pre></li><hr>
+					<li>Endless Support</li><hr>
+					<li><a href="login.html" target="project"><button class="button">Sign Up</button></a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
